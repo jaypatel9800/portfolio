@@ -143,9 +143,10 @@ section {
 .page-1 {
   display: grid;
   grid-template-columns: 0.3fr 0.3fr 0.4fr;
-  grid-template-rows: 0.45fr 0.45fr 0.1fr;
+  grid-template-rows: 0.08fr 0.41fr 0.41fr 0.1fr;
   height: 100vh;
   grid-template-areas:
+    ". . ."
     "main-text main-text main-image"
     "main-text main-text main-image"
     "social-icons . main-image";
@@ -190,13 +191,16 @@ section {
   .page-1 {
     display: grid;
     grid-template-columns: 0.2fr 0.8fr;
-    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-rows: 8vh 46vh 46vh;
     grid-template-areas:
+      ". ."
       "main-text main-text"
       "social-icons main-image";
   }
   .main-text {
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
   }
@@ -207,7 +211,11 @@ section {
     flex-direction: column;
   }
   .main-image {
-    place-items: center;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .main-image img {
     width: 200px;
@@ -220,7 +228,7 @@ section {
 .page-2 {
   display: grid;
   grid-template-columns: 0.4fr 0.6fr;
-  grid-template-rows: 0.08fr 0.22fr 0.5fr 0.2fr;
+  grid-template-rows: 8vh 22vh 50vh 20vh;
   height: 100vh;
   grid-template-areas:
     ". ."
